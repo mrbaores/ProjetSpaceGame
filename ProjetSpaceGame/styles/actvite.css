@@ -1,0 +1,98 @@
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles globaux */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0a1128;
+    color: #ffffff;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* En-tête */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+header p {
+    font-size: 1.2em;
+    color: #b3d4e0;
+}
+
+/* Section des activités */
+.activities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+article {
+    background: #162447;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 15px;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+/* Image de l'activité */
+figure {
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #1ce1ff;
+}
+
+/* Contenu de l'article */
+article header {
+    margin-top: 10px;
+}
+
+article h2 {
+    color: #1ce1ff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+article p {
+    color: #b3d4e0;
+    margin-bottom: 15px;
+}
+
+article ul {
+    list-style: none;
+    padding: 0;
+}
+
+article li {
+    margin-bottom: 5px;
+    color: #b3d4e0;
+}
+
+article strong {
+    color: #ffffff;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #b3d4e0;
+    font-size: 0.9em;
+}

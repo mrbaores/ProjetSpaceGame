@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Escape Game : Mission Galactique</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    
+    <link rel="stylesheet" href="../styles/contact.css">
+</head>
+<body>
+
+    <div class="fond">
+        <video autoplay loop muted playsinline>
+            <source src="../image-video/espace.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <header>
+        <!-- affichage du logo du site suivi du titre puis des boutons de navigation  -->
+                <img src="../image-video/Logo.png" alt="Image du logo du site" />    
+                <h1>THE SPACE GAME</h1>
+                <nav>
+                    <a class="active" href="index.html">Home</a> 
+                    <a href="#news">News</a>
+                    <a href="activite.html">Escape rooms</a>
+                    <a href="contact.html">Contactez-nous</a>
+                </nav>
+                <nav>
+                    <a class="Res" href="index.html#reserver">RESERVER MAINTENANT</a>
+                </nav>
+            </header>
+    <main>
+        <!-- Informations de contact -->
+        <section class="contact-info">
+            <h2>Informations de contact</h2>
+            <p>Vous souhaitez obtenir plus d'informations sur The Game ?</p>
+            <p>N'hésitez pas à nous contacter pour de plus amples informations en remplissant le formulaire ci-dessous ou en nous envoyant directement un mail .</p>
+            <p><strong>Téléphone :</strong> <a href="tel:+33612345678">+33 6 12 34 56 78</a></p>
+            <p><strong>Email :</strong> <a href="mailto:contact@escape-espace.fr">contact@escape-espace.fr</a></p>
+        </section>
+
+        <!-- Carte Google Maps -->
+        <section class="map">
+            <h2>Notre position</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.797769742859!2d-118.32866132490284!3d33.92068192707071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b5db4c53196f%3A0x291706cfdf29bb5c!2sSpaceX!5e0!3m2!1sfr!2sfr!4v1634904042814!5m2!1sfr!2sfr" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </section>
+
+        <!-- Formulaire de contact -->
+        <section class="reservation-form">
+            <h2>Réservez votre mission</h2>
+            <form action="#" method="post">
+                <label for="name">Nom complet :</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+                <label for="phone">Téléphone :</label>
+                <input type="tel" id="phone" name="phone" placeholder="Votre téléphone">
+
+                <label for="group-size">Taille de l'équipage :</label>
+                <select id="group-size" name="group-size" required>
+                    <option value="2">2 personnes</option>
+                    <option value="3">3 personnes</option>
+                    <option value="4">4 personnes</option>
+                    <option value="5">5 personnes</option>
+                    <option value="6">6 personnes</option>
+                </select>
+
+                <label for="date">Date de mission :</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" placeholder="Vos demandes spécifiques"></textarea>
+
+                <input type="submit" value= "Envoyer">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Crédits : 
+            Bouremani Mohamed
+            Khelaifa Bekkar
+        </p>
+        <img src="../image-video/Universite.png" >
+        <address>
+            <p></p>
+            <a href="https://cours.iut-orsay.fr">Rapport au format PDF de notre projet</a>
+        </address>
+    </footer>
+</body>
+</html>

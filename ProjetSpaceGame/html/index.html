@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>THE SPACE GAME</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Vidéo de fond -->
+    <div class="fond">
+        <video autoplay loop muted playsinline>
+            <source src="../image-video/espace.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <header>
+<!-- affichage du logo du site suivi du titre puis des boutons de navigation  -->
+        <img src="../image-video/Logo.png" alt="Image du logo du site" />    
+        <h1>THE SPACE GAME</h1>
+        <nav>
+            <a class="active" href="#home">Home</a> 
+            <a href="#news">News</a>
+            <a href="activite.html">Escape rooms</a>
+            <a href="contact.html">Contactez-nous</a>
+        </nav>
+        <nav>
+            <a class="Res" href="#reserver">RESERVER MAINTENANT</a>
+        </nav>
+    </header>
+
+    <aside>
+        <section>
+            <h1>POUR LE MOMENT, LES SEANCES SONT A -50% !!</h1>
+            <h2>Venez vite prendre vos places pour THE SPACE GAME</h2>
+        </section>
+    </aside>
+
+    <main>
+    <section id="active">
+        <p>texte de présentation de l'escape game de l'espace.</p>
+        <p>Imaginez-vous plongé dans l'infinité de l'espace, à bord d'un vaisseau spatial abandonné, à la dérive dans une zone inconnue de la galaxie. Bienvenue dans "Mission Galactica", notre tout nouvel escape game futuriste où l'adrénaline est à son comble! Votre équipage a une heure pour résoudre une série d'énigmes high-tech, déjouer des systèmes de sécurité extraterrestres et réparer les systèmes vitaux du vaisseau, tout en évitant une mystérieuse menace qui rôde à bord. Chaque minute compte : une défaillance des moteurs pourrait vous condamner à dériver éternellement dans l'espace. Serez-vous capable de sauver votre équipage et de revenir sur Terre à temps? Embarquez pour une aventure spatiale immersive, où logique, rapidité et coopération sont vos seuls alliés. Vous ne voudrez pas manquer cette expérience unique qui vous fera vivre des frissons à des années-lumière de la routine!</p>
+        </section>
+
+        <section>
+            <video autoplay muted loop class="video">
+                <source src="../image-video/Space Game.mp4" type="video/mp4" >
+                Votre navigateur ne supporte pas la vidéo
+            </video>
+        </section>
+
+        <section id="reserver">
+
+            <h2>Formulaire de réservation pour une séance de THE ESCAPE GAME</h2>
+
+            <form action="/reserver" method="post">
+
+                <!-- Nom complet -->
+                <label for="name" >Nom complet : </label>
+                <input type="name" id="name" name="name" required><br><br>
+
+                <!-- Adresse email -->
+                <label for="email" >Adresse email : </label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <!-- Numéro de téléphone -->
+                <label for="phone">Numéro de téléphone :</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+                <!-- Date de la séance -->
+                <label for="date">Date de la séance :</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+
+                <!-- Heure de la séance -->
+                <label for="time">Heure de la séance :</label><br>
+                <input type="time" id="time" name="time" required><br><br>
+
+                <!-- Nombre de participants -->
+                <label for="participants">Nombre de participants :</label><br>
+                <input type="number" id="participants" name="participants" min="1" max="10" required><br><br>
+
+                <!-- Bouton de soumission -->
+                <input type="submit" value="Réserver">
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Crédits : 
+            Bouremani Mohamed
+            Khelaifa Bekkar
+        </p>
+        <img src="../image-video/Universite.png" >
+        <address>
+            <p></p>
+            <a href="https://cours.iut-orsay.fr">Rapport au format PDF de notre projet</a>
+        </address>
+    </footer>
+
+</body>
+
+
+</html>

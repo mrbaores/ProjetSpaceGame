@@ -1,0 +1,241 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Supprimer la couleur de fond */
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header img {
+    max-width: 100px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.3s ease;
+}   
+
+nav a:hover::before {
+    opacity: 1;
+}   
+
+
+nav a:hover, nav a.active {
+    border: solid;
+    text-decoration: underline;
+    color: #074282;
+}
+
+nav a:hover {
+    color: #003d7a;
+    border-color: #003d7a; /* Bordure colorée au survol */
+    box-shadow: 0 0 8px #003d7a, 0 0 15px #003d7a; /* Effet lumineux */
+}
+
+nav .Res {
+    background-color: #074282;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+nav .Res:hover {
+    background-color: #2f3134;
+}
+
+/* Style pour un aside plus large */
+aside {
+    background-color: #074282; /* Couleur de fond bleue */
+    color: #ffffff; /* Texte en blanc */
+    padding: 30px; /* Espace intérieur plus grand */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre subtile */
+    max-width: 90%; /* Largeur maximale relative à la fenêtre */
+    width: 80%; /* Largeur pour les écrans standards */
+    margin: 20px auto; /* Centrer horizontalement */
+    text-align: center; /* Centrer le texte */
+    font-family: 'Orbitron', sans-serif; /* Utilisation de la police Orbitron */
+}
+
+aside h1 {
+    font-size: 2em; /* Taille du titre principal */
+    margin-bottom: 15px;
+    color: #FFD700; /* Couleur dorée */ 
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* Effet d'ombre */
+}
+
+aside h2 {
+    font-size: 1.5em; /* Taille du sous-titre */
+    margin-bottom: 20px;
+    color: #E0E0E0; /* Gris clair */
+}
+
+/* Responsiveness pour les petits écrans */
+@media (max-width: 768px) {
+    aside {
+        max-width: 100%; /* Occupe toute la largeur disponible */
+        width: 90%; /* Ajuste la largeur */
+        margin: 10px; /* Réduit les marges */
+        padding: 20px; /* Réduit le padding */
+    }
+
+    aside h1 {
+        font-size: 1.5em; /* Ajuste la taille du titre */
+    }
+
+    aside h2 {
+        font-size: 1.2em; /* Ajuste la taille du sous-titre */
+    }
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Suppression de la redéfinition inutile de `.fond` */
+.fond {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1; /* Place la vidéo en arrière-plan */
+}
+
+.fond video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* Styles pour rendre le contenu lisible sur la vidéo */
+body, header, main, footer {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7); /* Ombre pour contraste */
+}
+
+header, main, footer {
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px auto;
+    max-width: 1200px;
+}
+
+
+section {
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    color: #074282;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+section#active p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+/* Video Section */
+.video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 5px solid #34495e;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p, footer address a {
+    color: white;
+    text-decoration: none;
+}
+
+footer img {
+    margin-top: 10px;
+    max-width: 150px;
+}
+
+footer address a:hover {
+    color: #f39c12;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header img {
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .video {
+        width: 100%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
